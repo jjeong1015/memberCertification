@@ -1,4 +1,4 @@
-package com.example.membercertification.security.util;
+package com.example.membercertification.util;
 
 import jakarta.servlet.http.HttpServletRequest;
 

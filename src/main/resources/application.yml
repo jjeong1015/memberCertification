@@ -5,6 +5,7 @@ spring:
     password: 1015
 
   jpa:
+    open-in-view: true
     hibernate:
       ddl-auto: update
     properties:

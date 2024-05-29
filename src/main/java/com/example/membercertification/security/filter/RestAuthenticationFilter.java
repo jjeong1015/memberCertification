@@ -2,7 +2,7 @@ package com.example.membercertification.security.filter;
 
 import com.example.membercertification.domain.dto.AccountDTO;
 import com.example.membercertification.security.token.RestAuthenticationToken;
-import com.example.membercertification.security.util.WebUtil;
+import com.example.membercertification.util.WebUtil;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;

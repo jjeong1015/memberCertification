@@ -4,6 +4,7 @@ import com.example.membercertification.domain.dto.AccountContext;
 import com.example.membercertification.security.detail.FormAuthenticationDetails;
 import com.example.membercertification.security.exception.SecretException;
 import lombok.RequiredArgsConstructor;
+import org.springframework.context.annotation.Primary;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -14,6 +15,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
 @Component("authenticationProvider") // 스프링 시큐리티에서 인증을 처리하는 인터페이스를 구현한 클래스를 빈으로 등록
+//@Primary
 @RequiredArgsConstructor // final 필드를 가지는 생성자를 생성
 public class FormAuthenticationProvider implements AuthenticationProvider { // 사용자 인증을 처리하는 클래스
 
