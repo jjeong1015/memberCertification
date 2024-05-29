@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api")
-public class RestApiController {
+public class RestApiController { // RestApiController : REST API를 관리하기 위한 클래스
 
     @GetMapping("/user")
     public AccountDTO restUser(@AuthenticationPrincipal AccountDTO accountDTO) { // 현재 사용자의 인증 객체를 반환

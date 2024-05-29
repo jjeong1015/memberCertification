@@ -20,7 +20,7 @@ import java.util.stream.Collectors;
 
 @Service("userDetailsService") // 스프링 시큐리티에서 사용자 정보를 가져오는 인터페이스를 구현한 클래스를 빈으로 등록
 @RequiredArgsConstructor // final 필드를 가지는 생성자를 생성
-public class FormUserDetailsService implements UserDetailsService {
+public class FormUserDetailsService implements UserDetailsService { // FormUserDetailsService : 사용자 정보를 가져오는 클래스
 
     private final UserRepository userRepository;
 

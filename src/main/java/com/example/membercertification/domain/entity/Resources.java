@@ -17,7 +17,7 @@ import java.util.Set;
 @EntityListeners(value = { AuditingEntityListener.class })
 @Builder
 @AllArgsConstructor
-public class Resources implements Serializable {
+public class Resources implements Serializable { // Resources : 사용자의 리소스를 관리하기 위한 엔티티 클래스
     @Id
     @GeneratedValue
     @Column(name = "resource_id")

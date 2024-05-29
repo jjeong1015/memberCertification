@@ -14,9 +14,7 @@ import org.springframework.stereotype.Component;
 import java.io.IOException;
 
 @Component("failureHandler")
-public class FormAuthenticationFailureHandler extends SimpleUrlAuthenticationFailureHandler { // 로그인 실패 시 처리할 핸들러
-
-    // Handler를 만드는 이유 : 로그인 실패 시, 로그인 페이지로 리다이렉트하고 에러 메시지를 전달하기 위해
+public class FormAuthenticationFailureHandler extends SimpleUrlAuthenticationFailureHandler { // FormAuthenticationFailureHandler : 로그인 실패 시 로그인 페이지로 리다이렉트하고 에러 메시지를 전달하기 위한 클래스
 
     @Override
     public void onAuthenticationFailure(final HttpServletRequest request, final HttpServletResponse response, final AuthenticationException exception) throws IOException, ServletException { // 로그인 실패 시 처리할 메서드

@@ -2,7 +2,7 @@ package com.example.membercertification.util;
 
 import jakarta.servlet.http.HttpServletRequest;
 
-public class WebUtil { // 웹 관련 유틸 클래스
+public class WebUtil { // WebUtil : 웹 관련 유틸리티 클래스
 
     private static final String XML_HTTP_REQUEST = "XMLHttpRequest";
     private static final String X_REQUESTED_WITH = "X-Requested-With";

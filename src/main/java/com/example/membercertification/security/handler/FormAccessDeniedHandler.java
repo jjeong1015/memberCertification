@@ -15,9 +15,7 @@ import org.springframework.stereotype.Component;
 import java.io.IOException;
 
 
-public class FormAccessDeniedHandler implements AccessDeniedHandler { // 접근 거부 시 처리할 핸들러
-
-    // Handler를 만드는 이유 : 접근 거부 시, 에러 페이지로 리다이렉트하기 위해
+public class FormAccessDeniedHandler implements AccessDeniedHandler { // FormAccessDeniedHandler : 접근 거부 시, 에러 페이지로 리다이렉트하기 위한 클래스
     
     private final RedirectStrategy redirectStrategy = new DefaultRedirectStrategy(); // 리다이렉트 전략을 사용하여 리다이렉트
     private final String errorPage; // 에러 페이지 URL

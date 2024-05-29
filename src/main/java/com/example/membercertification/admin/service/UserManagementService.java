@@ -5,7 +5,7 @@ import com.example.membercertification.domain.entity.Account;
 
 import java.util.List;
 
-public interface UserManagementService {
+public interface UserManagementService { // UserManagementService : 사용자 정보를 관리하기 위한 인터페이스
 
     void modifyUser(AccountDTO accountDTO);
 

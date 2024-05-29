@@ -16,7 +16,7 @@ import java.util.Set;
 @Getter
 @Setter
 @Builder
-public class RoleHierarchy implements Serializable {
+public class RoleHierarchy implements Serializable { // RoleHierarchy : 계층형 권한을 관리하기 위한 엔티티 클래스
     @Id
     @GeneratedValue
     private Long id;

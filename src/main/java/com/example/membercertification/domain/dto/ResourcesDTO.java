@@ -12,7 +12,7 @@ import java.util.Set;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class ResourcesDTO{
+public class ResourcesDTO{ // ResourcesDTO : 사용자의 권한 정보를 전달하기 위한 DTO 클래스
     private String id;
     private String resourceName;
     private String httpMethod;

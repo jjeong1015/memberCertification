@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 
 @Component("restAuthenticationProvider") // Spring Bean으로 등록
 @RequiredArgsConstructor // final 필드를 가지는 생성자를 생성
-public class RestAuthenticationProvider implements AuthenticationProvider {
+public class RestAuthenticationProvider implements AuthenticationProvider { // RestAuthenticationProvider : 사용자 인증을 처리하는 클래스
 
     private final UserDetailsService userDetailsService; // 사용자 정보를 가져오기 위한 UserDetailsService
     private final PasswordEncoder passwordEncoder; // 비밀번호 암호화를 위한 PasswordEncoder

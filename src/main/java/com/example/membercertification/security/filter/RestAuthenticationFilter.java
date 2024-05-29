@@ -21,9 +21,9 @@ import org.springframework.util.StringUtils;
 
 import java.io.IOException;
 
-public class RestAuthenticationFilter extends AbstractAuthenticationProcessingFilter {
+public class RestAuthenticationFilter extends AbstractAuthenticationProcessingFilter { // RestAuthenticationFilter : Rest 방식으로 로그인하기 위한 필터
 
-    private final ObjectMapper objectMapper = new ObjectMapper();
+    private final ObjectMapper objectMapper = new ObjectMapper(); // JSON 변환을 위한 ObjectMapper
 
     public RestAuthenticationFilter() { // Dsl에서 HttpSecurity http 제거
         super(new AntPathRequestMatcher("/api/login", "POST")); // /api/login으로 요청이 오면 POST 방식으로 처리

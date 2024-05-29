@@ -14,7 +14,7 @@ import java.util.Set;
 @Builder
 @AllArgsConstructor
 @RequiredArgsConstructor
-public class Account implements Serializable {
+public class Account implements Serializable { // Account : 사용자 정보를 관리하기 위한 엔티티 클래스
     @Id
     @GeneratedValue
     private Long id;

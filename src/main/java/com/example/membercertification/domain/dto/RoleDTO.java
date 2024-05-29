@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class RoleDTO{
+public class RoleDTO{ // RoleDTO : 사용자의 권한 정보를 전달하기 위한 DTO 클래스
     private String id;
     private String roleName;
     private String roleDesc;

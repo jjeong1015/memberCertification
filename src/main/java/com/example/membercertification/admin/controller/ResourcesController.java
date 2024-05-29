@@ -21,7 +21,7 @@ import java.util.Set;
 
 @Controller
 @RequiredArgsConstructor
-public class ResourcesController {
+public class ResourcesController { // ResourcesController : 사용자의 권한 정보를 관리하기 위한 클래스
 
 	private final ResourcesService resourcesService;
 	private final RoleRepository roleRepository;

@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
-public class LoginController {
+public class LoginController { // LoginController : 로그인 처리를 위한 클래스
 
     @GetMapping("/login")
     public String login(@RequestParam(value = "error", required = false) String error,

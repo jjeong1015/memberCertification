@@ -15,7 +15,7 @@ import java.util.Set;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class Role implements Serializable {
+public class Role implements Serializable { // Role : 사용자의 권한을 관리하기 위한 엔티티 클래스
     @Id
     @GeneratedValue
     @Column(name = "role_id")

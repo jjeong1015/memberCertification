@@ -8,7 +8,7 @@ import java.util.List;
 @Builder // 빌더 패턴을 사용할 수 있게 해줌
 @NoArgsConstructor // 디폴트 생성자를 생성
 @AllArgsConstructor // 모든 필드 값을 파라미터로 받는 생성자를 생성
-public class AccountDTO { // 사용자 정보 DTO
+public class AccountDTO { // AccountDTO : 사용자 정보를 전달하기 위한 DTO 클래스
     private String id;
     private String username;
     private int age;

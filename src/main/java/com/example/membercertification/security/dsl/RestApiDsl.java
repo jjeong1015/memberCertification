@@ -15,7 +15,7 @@ import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 import org.springframework.security.web.util.matcher.RequestMatcher;
 
 public class RestApiDsl <H extends HttpSecurityBuilder<H>> extends
-        AbstractAuthenticationFilterConfigurer<H, RestApiDsl<H>, RestAuthenticationFilter> { // AbstractAuthenticationFilterConfigurer를 상속받는 RestApiDsl 클래스
+        AbstractAuthenticationFilterConfigurer<H, RestApiDsl<H>, RestAuthenticationFilter> { // RestApiDsl : Rest 방식으로 로그인하기 위한 Dsl 클래스
 
     private AuthenticationSuccessHandler successHandler; // 로그인 성공 핸들러
     private AuthenticationFailureHandler failureHandler; // 로그인 실패 핸들러

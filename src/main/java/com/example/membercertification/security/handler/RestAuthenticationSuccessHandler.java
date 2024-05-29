@@ -16,7 +16,8 @@ import org.springframework.stereotype.Component;
 import java.io.IOException;
 
 @Component("restSuccessHandler") // Bean 이름 설정
-public class RestAuthenticationSuccessHandler implements AuthenticationSuccessHandler {
+public class RestAuthenticationSuccessHandler implements AuthenticationSuccessHandler { // AuthenticationSuccessHandler : 로그인 성공 시, JSON으로 계정 정보를 전달하기 위한 클래스
+
     @Override
     public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication) throws IOException {
 

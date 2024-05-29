@@ -26,7 +26,7 @@ import org.springframework.security.web.authentication.WebAuthenticationDetails;
 @EnableWebSecurity // Spring Security를 사용하도록 설정
 @Configuration // 설정 클래스를 나타냄
 @RequiredArgsConstructor // final 필드를 가지는 생성자를 생성
-public class SecurityConfig { // Spring Security 설정을 위한 클래스
+public class SecurityConfig { // SecurityConfig : Spring Security 설정을 위한 클래스
 
     private final AuthenticationProvider authenticationProvider;
     private final AuthenticationProvider restAuthenticationProvider;

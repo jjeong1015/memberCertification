@@ -15,7 +15,7 @@ import java.util.List;
 @Slf4j
 @Service
 @RequiredArgsConstructor
-public class ResourcesServiceImpl implements ResourcesService {
+public class ResourcesServiceImpl implements ResourcesService { // ResourcesServiceImpl : 사용자의 권한 정보를 관리하기 위한 클래스
 
     private final ResourcesRepository resourcesRepository;
     private final CustomDynamicAuthorizationManager authorizationManager;

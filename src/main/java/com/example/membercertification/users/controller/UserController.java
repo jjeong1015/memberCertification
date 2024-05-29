@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
 @RequiredArgsConstructor
-public class UserController {
+public class UserController { // UserController : 사용자 정보를 관리하기 위한 클래스
 
     private final PasswordEncoder passwordEncoder;
     private final UserService userService;

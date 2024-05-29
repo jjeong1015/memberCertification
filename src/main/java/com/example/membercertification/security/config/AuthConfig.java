@@ -8,18 +8,18 @@ import org.springframework.security.crypto.factory.PasswordEncoderFactories;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 @Configuration
-public class AuthConfig {
+public class AuthConfig { // AuthConfig : 인증 관련 설정을 위한 클래스
     @Bean
     public PasswordEncoder passwordEncoder() { // PasswordEncoder 빈을 정의
         return PasswordEncoderFactories.createDelegatingPasswordEncoder();
     }
 
     @Bean
-    public RoleHierarchyImpl roleHierarchy(RoleHierarchyService roleHierarchyService) {
-        String allHierarchy = roleHierarchyService.findAllHierarchy();
-        RoleHierarchyImpl roleHierarchy = new RoleHierarchyImpl();
-        roleHierarchy.setHierarchy(allHierarchy);
+    public RoleHierarchyImpl roleHierarchy(RoleHierarchyService roleHierarchyService) { // RoleHierarchyImpl 빈을 정의
+        String allHierarchy = roleHierarchyService.findAllHierarchy(); // 모든 계층을 가져옴
+        RoleHierarchyImpl roleHierarchy = new RoleHierarchyImpl(); // RoleHierarchyImpl 객체 생성
+        roleHierarchy.setHierarchy(allHierarchy); // 계층 설정
 
-        return roleHierarchy;
+        return roleHierarchy; // RoleHierarchyImpl 객체 반환
     }
 }

@@ -13,7 +13,8 @@ import org.springframework.stereotype.Component;
 import java.io.IOException;
 
 @Component("restFailureHandler")
-public class RestAuthenticationFailureHandler implements AuthenticationFailureHandler {
+public class RestAuthenticationFailureHandler implements AuthenticationFailureHandler { // RestAuthenticationFailureHandler : 로그인 실패 시, JSON으로 에러 메시지를 전달하기 위한 클래스
+
     @Override
     public void onAuthenticationFailure(HttpServletRequest request, HttpServletResponse response, AuthenticationException exception) throws IOException {
 

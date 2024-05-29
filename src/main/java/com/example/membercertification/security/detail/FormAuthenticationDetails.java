@@ -5,7 +5,7 @@ import lombok.Getter;
 import org.springframework.security.web.authentication.WebAuthenticationDetails;
 
 @Getter // secretKey 필드의 getter 메서드 생성
-public class FormAuthenticationDetails extends WebAuthenticationDetails {
+public class FormAuthenticationDetails extends WebAuthenticationDetails { // FormAuthenticationDetails : 사용자가 입력한 secretKey 값을 가져오기 위한 클래스
 
     private final String secretKey; // secretKey 필드 선언
 

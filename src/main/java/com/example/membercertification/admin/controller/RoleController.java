@@ -15,7 +15,7 @@ import java.util.List;
 
 @Controller
 @RequiredArgsConstructor
-public class RoleController {
+public class RoleController { // RoleController : 사용자의 권한 정보를 관리하기 위한 클래스
 
 	private final RoleService roleService;
 

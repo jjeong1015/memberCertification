@@ -8,7 +8,7 @@ import java.util.Collection;
 import java.util.List;
 
 @Data // Getter, Setter, toString, equals, hashCode 메소드를 자동 생성
-public class AccountContext implements UserDetails { // 사용자 정보를 담는 클래스
+public class AccountContext implements UserDetails { // AccountContext : 사용자 정보를 담는 클래스
 
     private AccountDTO accountDTO; // 사용자 정보
     private final List<GrantedAuthority> roles; // 사용자 권한 정보

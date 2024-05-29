@@ -13,7 +13,7 @@ import java.util.List;
 @Slf4j
 @Service
 @RequiredArgsConstructor
-public class RoleServiceImpl implements RoleService {
+public class RoleServiceImpl implements RoleService { // RoleServiceImpl : 사용자의 권한 정보를 관리하기 위한 클래스
 
     private final RoleRepository roleRepository;
 

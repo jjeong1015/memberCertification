@@ -15,17 +15,17 @@ import java.util.Set;
 @Slf4j
 @Service
 @RequiredArgsConstructor
-public class UserService {
+public class UserService { // UserService : 사용자 정보를 관리하기 위한 클래스
 
-    private final UserRepository userRepository;
-    private final RoleRepository roleRepository;
+    private final UserRepository userRepository; // 사용자 정보 저장소
+    private final RoleRepository roleRepository; // 역할 정보 저장소
 
     @Transactional
-    public void createUser(Account account){
-        Role role = roleRepository.findByRoleName("ROLE_USER");
-        Set<Role> roles = new HashSet<>();
-        roles.add(role);
-        account.setUserRoles(roles);
-        userRepository.save(account);
+    public void createUser(Account account){ // 사용자 생성 메소드
+        Role role = roleRepository.findByRoleName("ROLE_USER"); // 사용자 역할 조회
+        Set<Role> roles = new HashSet<>(); // 역할 정보 저장
+        roles.add(role); // 사용자 역할 추가
+        account.setUserRoles(roles); // 사용자 역할 설정
+        userRepository.save(account); // 사용자 정보 저장
     }
 }

@@ -16,7 +16,8 @@ import java.util.List;
 
 @Controller
 @RequiredArgsConstructor
-public class UserManagementController {
+public class UserManagementController { // UserManagementController : 사용자 정보를 관리하기 위한 클래스
+
 	private final UserManagementService userManagementService;
 	private final RoleService roleService;
 	@GetMapping("/admin/users")

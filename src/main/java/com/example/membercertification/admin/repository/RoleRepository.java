@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.Query;
 
 import java.util.List;
 
-public interface RoleRepository extends JpaRepository<Role, Long> {
+public interface RoleRepository extends JpaRepository<Role, Long> { // RoleRepository : 사용자의 권한 정보를 관리하기 위한 인터페이스
     Role findByRoleName(String name);
 
     @Override

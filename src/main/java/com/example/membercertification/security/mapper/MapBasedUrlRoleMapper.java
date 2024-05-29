@@ -4,13 +4,13 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-public class MapBasedUrlRoleMapper implements UrlRoleMapper{
+public class MapBasedUrlRoleMapper implements UrlRoleMapper{ // MapBasedUrlRoleMapper : URL과 권한을 매핑하는 클래스
 
-    private final LinkedHashMap<String, String> urlRoleMappings = new LinkedHashMap<>();
+    private final LinkedHashMap<String, String> urlRoleMappings = new LinkedHashMap<>(); // LinkedHashMap 객체 생성
     @Override
-    public Map<String, String> getUrlRoleMappings() {
+    public Map<String, String> getUrlRoleMappings() { // UrlRoleMapper 인터페이스의 getUrlRoleMappings 메소드 재정의, urlRoleMappings : URL과 권한을 매핑하는 맵 객체 반환
 
-        urlRoleMappings.put("/", "permitAll");
+        urlRoleMappings.put("/", "permitAll"); // URL과 권한 매핑
         urlRoleMappings.put("/css/**", "permitAll");
         urlRoleMappings.put("/js/**", "permitAll");
         urlRoleMappings.put("/images/**", "permitAll");
@@ -29,6 +29,6 @@ public class MapBasedUrlRoleMapper implements UrlRoleMapper{
 
         urlRoleMappings.put("/db", "hasRole('DBA')");
 
-        return new HashMap<>(urlRoleMappings);
+        return new HashMap<>(urlRoleMappings); // urlRoleMappings 맵 객체 반환
     }
 }

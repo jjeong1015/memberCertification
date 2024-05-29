@@ -11,7 +11,7 @@ import org.springframework.security.web.access.AccessDeniedHandler;
 
 import java.io.IOException;
 
-public class RestAccessDeniedHandler implements AccessDeniedHandler { // 접근 거부 핸들러
+public class RestAccessDeniedHandler implements AccessDeniedHandler { // RestAccessDeniedHandler : 접근 거부 시, JSON으로 에러 메시지를 전달하기 위한 클래스
 
     private final ObjectMapper mapper = new ObjectMapper(); // JSON 변환을 위한 ObjectMapper 객체 생성
 

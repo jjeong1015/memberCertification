@@ -13,7 +13,8 @@ import java.util.Iterator;
 import java.util.List;
 
 @Service
-public class RoleHierarchyServiceImpl implements RoleHierarchyService {
+public class RoleHierarchyServiceImpl implements RoleHierarchyService { // RoleHierarchyServiceImpl : 사용자의 권한 계층 정보를 관리하기 위한 클래스
+
     private RoleHierarchyRepository roleHierarchyRepository;
 
     @Autowired

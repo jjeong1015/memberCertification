@@ -14,9 +14,7 @@ import org.springframework.stereotype.Component;
 import java.io.IOException;
 
 @Component("successHandler")
-public class FormAuthenticationSuccessHandler extends SimpleUrlAuthenticationSuccessHandler { // 로그인 성공 시 처리할 핸들러
-
-    // Handler를 만드는 이유 : 로그인 성공 시, 이전 페이지로 리다이렉트하기 위해
+public class FormAuthenticationSuccessHandler extends SimpleUrlAuthenticationSuccessHandler { // FormAuthenticationSuccessHandler : 로그인 성공 시 이전 페이지로 리다이렉트하기 위해 사용하는 클래스
 
     private final RequestCache requestCache = new HttpSessionRequestCache(); // 요청 캐시를 사용하여 요청을 저장
     private final RedirectStrategy redirectStrategy = new DefaultRedirectStrategy(); // 리다이렉트 전략을 사용하여 리다이렉트
