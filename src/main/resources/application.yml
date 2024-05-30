@@ -15,3 +15,8 @@ spring:
 
   thymeleaf:
     cache: false
+
+logging:
+  level:
+    org.springframework: DEBUG
+    org.hibernate: DEBUG
