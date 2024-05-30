@@ -10,13 +10,16 @@ spring:
       ddl-auto: update
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.PostgreSQL10Dialect
+        dialect: org.hibernate.dialect.PostgreSQLDialect
         format_sql: true
 
   thymeleaf:
     cache: false
 
-logging:
-  level:
-    org.springframework: DEBUG
-    org.hibernate: DEBUG
+#  aop:
+#    proxy-target-class: true
+
+#logging:
+#  level:
+#    org.springframework: DEBUG
+#    org.hibernate: DEBUG
