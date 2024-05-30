@@ -31,5 +31,6 @@ public class Account implements Serializable { // Account : 사용자 정보를 
     @ManyToMany(fetch = FetchType.LAZY, cascade={CascadeType.MERGE})
     @JoinTable(name = "account_roles", joinColumns = { @JoinColumn(name = "account_id") }, inverseJoinColumns = {@JoinColumn(name = "role_id") })
     @ToString.Exclude
+    @Builder.Default
     private Set<Role> userRoles = new HashSet<>();
 }

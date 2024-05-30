@@ -39,6 +39,7 @@ public class Resources implements Serializable { // Resources : 사용자의 리
     @JoinTable(name = "role_resources", joinColumns = {@JoinColumn(name = "resource_id") },
     inverseJoinColumns = { @JoinColumn(name = "role_id") })
     @ToString.Exclude
+    @Builder.Default
     private Set<Role> roleSet = new HashSet<>();
 
 }

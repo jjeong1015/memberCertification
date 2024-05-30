@@ -32,9 +32,10 @@ public class Role implements Serializable { // Role : 사용자의 권한을 관
 
     @ManyToMany(fetch = FetchType.LAZY, mappedBy = "roleSet", cascade = CascadeType.ALL)
     @OrderBy("orderNum desc")
+    @Builder.Default
     private Set<Resources> resourcesSet = new LinkedHashSet<>();
 
-
+    @Builder.Default
     @ManyToMany(fetch = FetchType.LAZY, mappedBy = "userRoles", cascade = CascadeType.ALL)
     private Set<Account> accounts = new HashSet<>();
 }
