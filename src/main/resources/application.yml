@@ -2,7 +2,7 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/membercertification
     username: jjeong
-    password: 1015
+    password: 0525
 
   jpa:
     open-in-view: true
