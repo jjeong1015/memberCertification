@@ -10,11 +10,8 @@ spring:
       ddl-auto: update
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect
+        dialect: org.hibernate.dialect.PostgreSQL10Dialect
         format_sql: true
-        jdbc:
-          lob:
-            non_contextual_creation: true
 
   thymeleaf:
     cache: false
