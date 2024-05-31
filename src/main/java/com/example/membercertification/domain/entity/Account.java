@@ -28,7 +28,7 @@ public class Account implements Serializable { // Account : 사용자 정보를 
     @Column
     private String password;
 
-    @ManyToMany(fetch = FetchType.LAZY, cascade={CascadeType.MERGE})
+    @ManyToMany(fetch = FetchType.EAGER, cascade={CascadeType.MERGE})
     @JoinTable(name = "account_roles", joinColumns = { @JoinColumn(name = "account_id") }, inverseJoinColumns = {@JoinColumn(name = "role_id") })
     @ToString.Exclude
     @Builder.Default
